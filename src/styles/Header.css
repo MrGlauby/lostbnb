@@ -1,0 +1,23 @@
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    background-color: white;
+}
+
+.logoLink {
+    padding-left: 5rem;
+}
+
+.loginLinks {
+    padding-right: 5rem;
+}
+
+.headerLink {
+    padding-right: 1rem;
+}
+
+nav .headerLink {
+    font-size: 1rem;
+    padding-right: 2rem;
+}

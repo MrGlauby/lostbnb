@@ -1,15 +1,19 @@
 import './App.css';
 import {useState, useEffect} from "react";
 import testApi from "./utils/testApi";
+import Header from "./components/Header";
 
 function App() {
 //////// API FETCH TESTING AREA /////////
-useEffect(() => {
-  testApi();
-}, [])
+// useEffect(() => {
+//   testApi();
+// }, [])
 //////// API FETCH TESTING AREA /////////
   return (
+    <>
     <div>LostBnB App.js return statement</div>
+    <Header />
+    </>
   );
 }
 
