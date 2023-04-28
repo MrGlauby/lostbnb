@@ -29,6 +29,7 @@
     /* left: 134px;  */
     /* top: 883px; */
     border-radius: 125px;
+    object-fit: cover;
 }
 
 .stageTwoContainerLeftImg2 {
@@ -45,6 +46,8 @@
         /* White */
     border: 12px solid #FFFFFF;
     border-radius: 125px;
+    object-fit: cover;
+
 }
 
 /* Text Container */
