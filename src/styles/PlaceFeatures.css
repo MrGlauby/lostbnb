@@ -1,0 +1,4 @@
+.placeFeaturesgridContainer {
+    border: 1px solid grey;
+    display: grid; 
+}
