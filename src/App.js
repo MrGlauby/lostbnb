@@ -1,11 +1,11 @@
 import './App.css';
 import {useState, useEffect} from "react";
-import testApi from "./utils/testApi";
+import testApi, { testApiFetchType } from "./utils/testApi";
 
 function App() {
 //////// API FETCH TESTING AREA /////////
 useEffect(() => {
-  testApi();
+  testApiFetchType("catface");
 }, [])
 //////// API FETCH TESTING AREA /////////
   return (
