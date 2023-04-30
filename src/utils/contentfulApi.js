@@ -29,7 +29,8 @@ export function fetchAllEntries() {
 
 export function fetchContentType(contentType) {
     if (contentTypes.includes(contentType)) {
-        const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/entries?access_token=${accessToken}&content_type=${contentType}`
+        const selectors = "sys.id,sys.createdAt,fields"
+        const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/entries/?select=${selectors}&content_type=${contentType}&access_token=${accessToken}`
         fetchContentful(fetchUrl);
     } else {
         console.error(`Could not find content type. Did you spell it right?`);
