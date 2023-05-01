@@ -5,7 +5,7 @@ const environment = "master";
 const accessToken = "3m-BGSfREZ3PmuhlllgUoxNA7QztjsVuxxIpmd1m2sI";
 const contentTypes = ["location", "places", "reviews", "user"]
 
-async function fetchContentful2(fetchUrl) {
+async function fetchContentful(fetchUrl) {
     let responseData = [];
     try {
         const response = await fetch(fetchUrl);
@@ -21,35 +21,18 @@ async function fetchContentful2(fetchUrl) {
     return responseData;
 }
 
-function fetchContentful(fetchUrl) {
-    let fetchData = [];
-    fetch(fetchUrl).then((response) => {
-        return response.json();
-    }).then((responseData) => {
-        fetchData = responseData;
-        console.log("fetch Log: ", fetchData);
-    }).catch((error) => console.error(error));
-    return fetchData;
-}
-
-export function fetchEntry(requestEntry){
+export async function fetchEntry(requestEntry){
     const entry = requestEntry
-    const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/master/entries/${entry}?access_token=${accessToken}`
-    
-    fetchContentful(fetchUrl);
-
-}
-
-export function fetchAllEntries() {
-    const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/entries?access_token=${accessToken}`
-    fetchContentful(fetchUrl);
+    const selectors = "sys.id,sys.createdAt,fields"
+    const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/master/entries/${entry}?select=${selectors}&access_token=${accessToken}`
+    return fetchContentful(fetchUrl);
 }
 
 export async function fetchContentTypeAll(contentType) {
     if (contentTypes.includes(contentType)) {
         const selectors = "sys.id,sys.createdAt,fields"
         const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/entries/?select=${selectors}&content_type=${contentType}&access_token=${accessToken}`
-        return fetchContentful2(fetchUrl)
+        return fetchContentful(fetchUrl)
         // console.log("fetchData variable: ", response);
         // return fetchData;
     } else {
@@ -58,14 +41,9 @@ export async function fetchContentTypeAll(contentType) {
     }
 }
 
-// export function fetchContentType(contentType) {
-//     if (contentTypes.includes(contentType)) {
-//         const selectors = "sys.id,sys.createdAt,fields"
-//         const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/entries/?select=${selectors}&content_type=${contentType}&access_token=${accessToken}`
-//         const fetchData = fetchContentful(fetchUrl);
-//     } else {
-//         console.error(`Could not find content type. Did you spell it right?`);
-//         console.warn(`Possible content types are: ${contentTypes}`);
-//     }
-//     return fetchData
-// }
+export async function fetchAsset(assetToFetch) {
+    const assetID = assetToFetch
+    const selectors = "sys.id,sys.createdAt,fields"
+    const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/assets/${assetID}?select=${selectors}&access_token=${accessToken}`
+    return fetchContentful(fetchUrl)
+}
