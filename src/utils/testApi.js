@@ -1,4 +1,4 @@
-import {fetchAllEntries, fetchContentType, fetchEntry} from "./contentfulApi";
+import {fetchAllEntries, fetchContentTypeAll, fetchEntry} from "./contentfulApi";
 
 export default function testApi() {
     const testEntry1 = 'Llh5RBFBTHeEQEXMvr7qP';
@@ -11,5 +11,5 @@ export function testApiFetchAll() {
 }
 
 export function testApiFetchType(contentType) {
-    fetchContentType(contentType);
+    return fetchContentTypeAll(contentType);
 }
