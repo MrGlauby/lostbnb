@@ -33,8 +33,6 @@ export async function fetchContentTypeAll(contentType) {
         const selectors = "sys.id,sys.createdAt,fields"
         const fetchUrl = `https://cdn.contentful.com/spaces/${space}/environments/${environment}/entries/?select=${selectors}&content_type=${contentType}&access_token=${accessToken}`
         return fetchContentful(fetchUrl)
-        // console.log("fetchData variable: ", response);
-        // return fetchData;
     } else {
         console.error(`Could not find content type. Did you spell it right?`);
         console.warn(`Possible content types are: ${contentTypes}`);
