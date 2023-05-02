@@ -1,9 +1,13 @@
 import React from 'react'
+import img1 from "../img/feedbackpicture1.jpg"
+import img2 from "../img/feedbackpicture2.jpg"
+import img3 from "../img/feedbackpicture3.jpg"
 
 export default function TravellersSection() {
   return (
     <div>TravellersSection
     <h2>Satisfied Travellers around the world</h2>
+    
       <div style={{ display: "flex" }}>
         <div style={{ flex: 1 }}>
           <h3>Customer Feedback 1</h3>
@@ -19,7 +23,11 @@ export default function TravellersSection() {
         </div>
       </div>
 
+<img className="bild1" src={img1} />  
 
+<img className="bild2" src={img2} />
+
+<img className="bild3" src={img3} />
 
     </div>
 

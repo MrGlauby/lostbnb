@@ -1,5 +1,6 @@
 
 import './App.css'; 
+import './styles/TravellersSection.css';
 import TravellersSection from './components/TravellersSection';
 
 function App() {
