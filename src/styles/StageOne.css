@@ -1,0 +1,74 @@
+/* alles  */
+.wrapper {
+    display: flex;
+    padding: 50px;
+    margin-right: 10%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    justify-content: center;
+}
+
+
+/* h2 */
+.dareto {
+    width: 570px;
+    height: 231px;
+    font-size: 4rem;
+    color: #112B3C;
+    text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+    text-align: left;
+    padding: 20px;
+}
+
+/* texte auf seite */
+.smaltext {
+    width: 469px;
+    height: 58px;
+    font-size: 2rem;
+    color: #808080;
+    padding: 20px;
+    margin-left: -20px;
+    margin-top: 50px;
+}
+
+.whenwehre {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* location date */
+.search {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 32px;
+    margin-left: -80px;
+}
+
+.date {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 32px;
+    margin-left: 20px;
+}
+
+
+/* Small  Pic*/
+.bild2 {
+    margin-top: 500px;
+    margin-left: 350px;
+    width: 300px;
+    height: 230.04px;
+    border: 8px solid #FFFFFF;
+    border-radius: 160px;
+}
+
+/* Big Pic */
+.bigpic{
+    background-image: url(../img/StageOne_1.jpg);
+    width:500px;
+    height:800px;
+    border-radius: 250px 250px 0 0;
+}
+
+
