@@ -9,7 +9,7 @@ export default function BookingCalender() {
 
   return (
     <>
-    <h1>Choose when and how long you want to be lost</h1>
+    <h1 className='bookingCalender-header'>Choose when and how long you want to be lost</h1>
     <br/>
     <br/>
     <div className="react-calendar">
