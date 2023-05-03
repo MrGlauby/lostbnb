@@ -1,29 +1,33 @@
-.headerWrapper {
+.headerWrapper, .footerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
   background-color: #ffffff;
 }
-.headerWrapper .logoLink {
+.headerWrapper .logoLink, .footerWrapper .logoLink {
   padding-left: 5rem;
   max-width: 20rem;
 }
-.headerWrapper .logoLink img {
+.headerWrapper .logoLink img, .footerWrapper .logoLink img {
   max-width: 80%;
 }
-.headerWrapper .loginLinks {
+.headerWrapper .loginLinks, .footerWrapper .loginLinks {
   padding-right: 5rem;
   display: flex;
   align-items: center;
 }
-.headerWrapper .loginLinks a {
+.headerWrapper .loginLinks a, .footerWrapper .loginLinks a {
   text-decoration: none;
   padding-left: 1rem;
   color: #dddddd;
   font-weight: bold;
 }
-.headerWrapper .loginLinks .registerLinkBox {
+.headerWrapper .loginLinks a:hover, .footerWrapper .loginLinks a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.headerWrapper .loginLinks .registerLinkBox, .footerWrapper .loginLinks .registerLinkBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +38,13 @@
   text-align: center;
   border-radius: 10rem;
 }
-.headerWrapper .loginLinks .registerLinkBox a {
+.headerWrapper .loginLinks .registerLinkBox a, .footerWrapper .loginLinks .registerLinkBox a {
   color: white;
+}
+.headerWrapper .loginLinks .registerLinkBox a:hover, .footerWrapper .loginLinks .registerLinkBox a:hover {
+  color: #000000;
+  cursor: pointer;
+  background-color: rgba(255, 56, 93, 0.6901960784);
 }
 
 .headerLink {
@@ -51,6 +60,10 @@ nav a {
   color: #dddddd;
   font-weight: bold;
 }
+nav a:hover {
+  color: #000000;
+  cursor: pointer;
+}
 
 .active {
   color: #717171;
@@ -58,4 +71,115 @@ nav a {
   text-decoration-line: underline;
   text-decoration-thickness: 0.2em;
   text-underline-offset: 7px;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 3rem;
+}
+.footerWrapper .footerColumns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.footerWrapper .footerColumns .footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLinksleft {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: flex-start;
+  padding-left: 5rem;
+  max-width: 20rem;
+}
+.footerLinksleft p {
+  text-align: left;
+}
+.footerLinksleft .logoLinkFooter {
+  padding: 0;
+}
+.footerLinksleft .logoLinkFooter img {
+  width: 80%;
+}
+.footerLinksleft .socialLinks {
+  display: flex;
+  justify-content: space-around;
+}
+.footerLinksleft .socialLinks a {
+  padding-right: 2rem;
+}
+.footerLinksleft .footerColumns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footerColumn {
+  padding-right: 5rem;
+  row-gap: 1.5rem;
+  text-align: left;
+}
+.footerColumn a {
+  text-decoration: none;
+  color: #dddddd;
+  font-weight: bold;
+}
+.footerColumn a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  row-gap: 2rem;
+  padding-right: 5rem;
+}
+.newsletter p {
+  max-width: 80%;
+}
+.newsletter form {
+  display: flex;
+}
+.newsletter form input {
+  margin-right: 1rem;
+  border: hidden;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  min-width: 14rem;
+  text-align: center;
+}
+.newsletter form input:focus {
+  outline-style: solid;
+  outline-color: #ff385c;
+  outline-width: 0.2rem;
+  border: hidden;
+  background-color: #ffffff;
+}
+.newsletter form input:focus::-moz-placeholder {
+  color: transparent;
+}
+.newsletter form input:focus::placeholder {
+  color: transparent;
+}
+.newsletter form button {
+  border-radius: 10rem;
+  width: 2rem;
+  height: 2rem;
+  border-color: transparent;
+  background-color: #ff385c;
+}
+.newsletter form button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 56, 93, 0.6901960784);
 }/*# sourceMappingURL=Header.css.map */
