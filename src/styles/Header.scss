@@ -1,0 +1,80 @@
+@import "./variables";
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: $backgroundColor;
+
+    .logoLink {
+        padding-left: 5rem;
+        max-width: 20rem;
+        
+        img{
+            max-width: 80%;
+        }
+    }
+    
+    .loginLinks {
+        padding-right: 5rem;
+        display: flex;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            padding-left: 1rem;
+            color: $inActiveLinkColor;
+            font-weight: bold;
+        }
+
+        .registerLinkBox {
+            @include flexCenter(row);
+            background-color: $highlightColor;
+            height: 3rem;
+            width: 7rem;
+            text-align: center;
+            border-radius: 10rem;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+.headerLink {
+    padding-right: 1rem;
+    }
+
+
+nav {
+    .headerLink {
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+    a {
+        text-decoration: none;
+        color: $inActiveLinkColor;
+        font-weight: bold;   
+}}
+
+.active {
+    color: $secondFontColor;
+    text-decoration-color: $highlightColor;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.2em;
+    text-underline-offset: 7px;
+    // background: linear-gradient(90deg, rgba(255,255,255,0) 14%, rgba(255,56,92,1) 50%, rgba(252,252,252,0) 90%);
+    // background-position: 0 100%;
+    // background-size: 100% 5px;
+    // background-repeat: repeat-x;
+    // border-radius: 10rem;
+}

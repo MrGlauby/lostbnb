@@ -7,7 +7,7 @@ export default function Header() {
     <>
         <div className="headerWrapper">
             <NavLink className="logoLink">
-                <img src="logo" alt="LostBnb Logo" />
+                <img src={require("../img/logo-big-pink.png")} alt="LostBnb Logo" />
             </NavLink>
 
             <nav>
@@ -21,20 +21,22 @@ export default function Header() {
                     Services
                 </NavLink>
                 <NavLink className="headerLink" to="/price">
-                    Home
+                    Price
                 </NavLink>
                 <NavLink className="headerLink" to="/contact">
-                    Home
+                    Contact
                 </NavLink>
             </nav>
 
             <div className="loginLinks">
-                <NavLink className="headerLink" to="/login">
+                <NavLink className="headerLink loginLink" to="/login">
                     Login
                 </NavLink>
+                <div className="registerLinkBox">
                 <NavLink className="headerLink registerLink" to="/register">
                     Register
                 </NavLink>
+                </div>
             </div>
         </div>
     </>

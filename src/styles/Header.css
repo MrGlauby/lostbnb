@@ -1,23 +1,61 @@
 .headerWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  background-color: #ffffff;
 }
-
-.logoLink {
-    padding-left: 5rem;
+.headerWrapper .logoLink {
+  padding-left: 5rem;
+  max-width: 20rem;
 }
-
-.loginLinks {
-    padding-right: 5rem;
+.headerWrapper .logoLink img {
+  max-width: 80%;
+}
+.headerWrapper .loginLinks {
+  padding-right: 5rem;
+  display: flex;
+  align-items: center;
+}
+.headerWrapper .loginLinks a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #dddddd;
+  font-weight: bold;
+}
+.headerWrapper .loginLinks .registerLinkBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ff385c;
+  height: 3rem;
+  width: 7rem;
+  text-align: center;
+  border-radius: 10rem;
+}
+.headerWrapper .loginLinks .registerLinkBox a {
+  color: white;
 }
 
 .headerLink {
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 nav .headerLink {
-    font-size: 1rem;
-    padding-right: 2rem;
+  font-size: 1rem;
+  padding-right: 2rem;
 }
+nav a {
+  text-decoration: none;
+  color: #dddddd;
+  font-weight: bold;
+}
+
+.active {
+  color: #717171;
+  text-decoration-color: #ff385c;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.2em;
+  text-underline-offset: 7px;
+}/*# sourceMappingURL=Header.css.map */

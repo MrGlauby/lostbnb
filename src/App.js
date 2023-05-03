@@ -6,13 +6,15 @@ import './styles/TravellersSection.css';
 import StageOne from './components/StageOne.js';
 import StageTwo from './components/StageTwo';
 import TravellersSection from './components/TravellersSection';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-    <StageOne />
+    <Header />
+    {/* <StageOne /> */}
     <StageTwo />
-    <TravellersSection/>
+    {/* <TravellersSection/> */}
     </div>
   );
 }
