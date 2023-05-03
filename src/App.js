@@ -1,19 +1,19 @@
 import './App.css';
-import {useState, useEffect} from "react";
-import testApi from "./utils/testApi";
-import Header from "./components/Header";
+import './styles/StageOne.css';
+import './styles/StageTwo.css'
+import './styles/TravellersSection.css';
+
+import StageOne from './components/StageOne.js';
+import StageTwo from './components/StageTwo';
+import TravellersSection from './components/TravellersSection';
 
 function App() {
-//////// API FETCH TESTING AREA /////////
-// useEffect(() => {
-//   testApi();
-// }, [])
-//////// API FETCH TESTING AREA /////////
   return (
-    <>
-    <div>LostBnB App.js return statement</div>
-    <Header />
-    </>
+    <div className="App">
+    <StageOne />
+    <StageTwo />
+    <TravellersSection/>
+    </div>
   );
 }
 
