@@ -1,7 +1,5 @@
 import React from 'react';
-//import './styles/StageTwo.css';
-import img1 from '../img/stageTwoContainerLeftImg1.jpg';
-import img2 from '../img/stageTwoContainerLeftImg2.jpg';
+import '../styles/StageTwo.css';
 
 
 
@@ -10,8 +8,6 @@ export default function StageTwo() {
     <>
     <div className ="stageTwoContainer">
     <div className ="stageTwoContainerLeft">
-    {/* <img className ="stageTwoContainerLeftImg1" src={img1} alt="Lost Place in Piemont, Italy"/>     */}
-    {/* <img className ="stageTwoContainerLeftImg2" src={img2} alt="Lost Place in Berlin, Germany"/> */}
     </div>
     <div className="stageTwoContainerRight">
         <h3>About us</h3>
