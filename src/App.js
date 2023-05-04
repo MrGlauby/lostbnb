@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
     <Header />
-    {/* <StageOne /> */}
+    <StageOne />
     <StageTwo />
-    {/* <TravellersSection/> */}
+    <TravellersSection/>
     <Footer />
     </div>
   );

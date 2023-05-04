@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
         <div className="headerWrapper">
-            <NavLink className="logoLink">
+            <NavLink className="logoLink" to="/">
                 <img src={require("../img/logo-big-pink.png")} alt="LostBnb Logo" />
             </NavLink>
 

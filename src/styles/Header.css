@@ -38,13 +38,17 @@
   text-align: center;
   border-radius: 10rem;
 }
+.headerWrapper .loginLinks .registerLinkBox:hover, .footerWrapper .loginLinks .registerLinkBox:hover {
+  background-color: rgba(255, 56, 93, 0.6901960784);
+  cursor: pointer;
+}
 .headerWrapper .loginLinks .registerLinkBox a, .footerWrapper .loginLinks .registerLinkBox a {
   color: white;
 }
 .headerWrapper .loginLinks .registerLinkBox a:hover, .footerWrapper .loginLinks .registerLinkBox a:hover {
   color: #000000;
   cursor: pointer;
-  background-color: rgba(255, 56, 93, 0.6901960784);
+  color: whitesmoke;
 }
 
 .headerLink {
@@ -112,7 +116,7 @@ nav a:hover {
   justify-content: space-around;
 }
 .footerLinksleft .socialLinks a {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 .footerLinksleft .footerColumns {
   display: flex;
