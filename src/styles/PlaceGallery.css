@@ -1,0 +1,103 @@
+
+/* alles */
+.warpGallery{
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+/* nav */
+a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.navigation{
+}
+
+.leftNav{
+    display: flex;
+}
+
+
+
+
+.rightNav{
+    display: flex;
+}
+
+
+/* gallery */
+.gallery{
+    display: flex;
+    padding: 30px;
+    }
+    
+
+.mainPic{
+    padding: 3px;
+
+    min-height: 250px;
+    min-width: 250px;
+    
+    max-width: 50%;
+    max-height: 50%;
+}
+
+/* div 4 pics */
+.smallPics img{
+
+    min-height: 150px;
+    min-width: 150px;
+    
+    max-width: 40%;
+    max-height: 40%;
+
+    padding: 3px;
+}
+
+/*  div oberen 2 */
+.sideOver{
+    display: flex;
+}
+
+/*  div unteren 2 */
+.sideUnder{
+    display: flex;
+}
+
+
+
+/* .dude{
+    border-radius: 400px;
+    width: 100px;
+    height: 100px;
+} */
+
+
+/* .grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  } */
+  
+
+
+
+  
