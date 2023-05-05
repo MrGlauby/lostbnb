@@ -17,35 +17,17 @@ export default function PlaceGallery() {
 
         <h2>[Idylisches Haus am Meer]</h2>
 
-        <div className="navigation">
-          <div className="leftNav">
-            <nav>
-              <ul>
-                <li>
-                  <a href="#">Sterne</a>
-                </li>
-                <li>
-                  <a href="#">Bewertungen</a>
-                </li>
-                <li>
-                  <a href="#">Svenborg, Dänemark</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <div className="navigation">
+              <ul className="leftNav">
+                <li><a href="#">Sterne</a></li>
+                <li><a href="#">Bewertungen</a></li>
+                <li><a href="#">Svenborg, Dänemark</a></li>
+              </ul>       
 
-          {/* <div className="rightNav">
-            <nav>
-              <ul>
-                <li>
-                  <a href="#">Teilen</a>
-                </li>
-                <li>
-                  <a href="#">Speichern</a>
-                </li>
-              </ul>
-            </nav>
-          </div> */}
+              <ul className="rightNav">
+                <li><a href="#">Teilen</a></li>
+                <li><a href="#">Speichern</a></li>
+              </ul>         
         </div>
 
         {/* gallery */}
@@ -64,27 +46,6 @@ export default function PlaceGallery() {
           </div>
         </div>
 
-        {/* musste exportiren in die PLACEFACTS.js */}
-        {/* <div>
-                    <div>
-                        <div>
-                             <h2>Gesamte Unterkunft: Privatunterkunft Gastgeber ist Anne</h2>
-                        </div>
-                        <div>
-                            <img className="dude" src={img6} alt="bild5" />
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>Anne ist ein Super Gastgeber!</h3>
-                        <p>TSuperhosts sind erfahrene, herasuragende bewertete Gastgeber, die alles dafür geben, ihren Gästen großartigen Aufenthalte zu bieten</p>
-                    </div>
-
-                    <div>
-                        <h3>Tolle Lage!</h3>
-                        <p>100 % der letzten Gäste haben die Lage mit 5 Sternen bewertet.</p>
-                    </div>
-            </div> */}
       </div>
     </div>
   );
