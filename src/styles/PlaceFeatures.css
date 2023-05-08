@@ -24,6 +24,7 @@
     width: 65px;
     height: 40px;
     padding-right: 25px;
+    vertical-align: middle;
 }
 
 .placeFeatures-btn-container {
@@ -39,4 +40,12 @@
     border-radius: 5px;
     text-align: left;
     margin-bottom: 50px;
+}
+
+.placeFeatures-btn:active {
+    background-color: lightgray;
+}
+
+.placeFeatures-btn:hover {
+    background-color: lightgray;
 }

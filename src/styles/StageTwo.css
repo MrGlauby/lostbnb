@@ -51,14 +51,19 @@
 .stageTwoContainerRight h3 {
     color: #E61C5D;
     font-weight: bold;
+    font-size: 2rem;
+
 }
 
 .stageTwoContainerRight h1 {
     font-weight: 900;
+    font-size: 3rem;
 }
 
 .stageTwoContainerRight p {
     color: #808080;
+    font-size: 1.5rem;
+
 }
 
 .stageTwoContainerRightSpanContainer {
