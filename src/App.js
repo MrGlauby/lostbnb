@@ -9,16 +9,26 @@ import PlacesSection from './components/PlacesSection';
 import TravellersSection from './components/TravellersSection';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import PlaceDetail from './pages/PlaceDetail'
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-    <Header />
-    {/* <StageOne /> */}
-    {/* <StageTwo /> */}
-    <PlacesSection />
-    {/* <TravellersSection/> */}
-    <Footer />
+      <Routes>
+        <Route path="/" element={
+        <div>
+          <Header />
+          {/* <StageOne /> */}
+          {/* <StageTwo /> */}
+          <PlacesSection />
+          {/* <TravellersSection/> */}
+          <Footer />
+        </div>} />
+
+        <Route path="/places/:placeID" element={<PlaceDetail />} />
+      </Routes>
+
     </div>
   );
 }
