@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { fetchEntry, fetchAsset } from '../utils/contentfulApi';
 import { Link } from 'react-router-dom';
+import '../styles/PlacePreview.css';
 
 export default function PlacePreview({place}) {
   const [mainPicture, setMainPicture] = useState();
@@ -25,12 +26,13 @@ export default function PlacePreview({place}) {
   const rating = place.rating;
   const price = place.price;
   
-  if(!mainPicture || !location) return <div>Loading...</div>
+  if(!mainPicture || !location) return <div>Loading..</div>
   
   return (
     <>
-    <Link to={`/places/${place.id}`}>
+    
       <div className="previewWrapper">
+      <Link to={`/places/${place.id}`}>
         <div className="previewPicture">
           <img src={mainPicture.picture} alt={mainPicture.title} width="300" height="auto"/>
         </div>
@@ -44,8 +46,9 @@ export default function PlacePreview({place}) {
           <p>per night</p>
           <br />
         </div>
+        </ Link>
       </div>
-      </ Link>
+      
     </>
   )
 }
