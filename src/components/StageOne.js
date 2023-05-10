@@ -1,5 +1,8 @@
 import React from "react";
+import '../styles/StageOne.css';
+
 import img2 from "../img/StageOne_2.jpg";
+
 
 export default function StageOne() {
   return (

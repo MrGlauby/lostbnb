@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/StageTwo.css';
 
-
-
 export default function StageTwo() {
+
   return (
     <>
+
     <div className ="stageTwoContainer">
     <div className ="stageTwoContainerLeft">
     </div>
