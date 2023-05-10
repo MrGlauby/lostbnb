@@ -5,25 +5,32 @@ import img0 from "../img/starfull.png";
 import imgArrow from "../img/arrow.png";
 import heart from "../img/heart.png";
 
-import img1 from "../img/placeDetail/adam.jpg";
-import img2 from "../img/placeDetail/alex.jpg";
+// import img1 from "../img/placeDetail/adam.jpg";
+// import img2 from "../img/placeDetail/alex.jpg";
 import img3 from "../img/placeDetail/deric.png";
 import img4 from "../img/placeDetail/karl.jpg";
 import img5 from "../img/placeDetail/michael.jpg";
 
-export default function PlaceGallery() {
+export default function PlaceGallery({place}) {
+  const img1 = place?.pictures[0]
+  const img2 = place?.pictures[1]
+  const img3 = place?.pictures[2]
+  const img4 = place?.pictures[3]
+  const img5 = place?.pictures[4]
+  console.log("review length: ", place?.reviews?.length)
+  console.log("rating: ", place?.rating)
   return (
     <div>
       <div className="warpGallery">
 
-        <h2>[Idylisches Haus am Meer]</h2>
+        <h2>{place?.name}</h2>
 
           <div className="navigation">
               <ul className="leftNav">
                 <img className="sternchen" src={img0} alt="stern"/>
-                <li className="interLeft"><a href="#">Sterne</a></li>
-                <li className="interLeft"><a href="#">Bewertungen</a></li>
-                <li className="interLeft"><a href="#">Svenborg, Dänemark</a></li>
+                <li className="interLeft"><a href="#">{place?.rating ? place.rating : "no reviews"} | </a></li>
+                <li className="interLeft"><a href="#">{place?.reviews.length} Reviews</a></li>
+                <li className="interLeft"><a href="#">{place?.location.city}, {place?.location.country}</a></li>
               </ul>       
 
               <ul className="rightNav">

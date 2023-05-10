@@ -3,8 +3,6 @@ import './styles/StageTwo.css'
 import './styles/StageOne.css';
 import './styles/TravellersSection.css';
 
-import { Routes, Route, NavLink } from "react-router-dom";
-
 import StageOne from './components/StageOne.js';
 import StageTwo from './components/StageTwo';
 import PlacesSection from './components/PlacesSection';

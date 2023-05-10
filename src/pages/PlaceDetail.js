@@ -2,6 +2,9 @@ import React, { useCallback } from 'react'
 import PlaceFeatures from '../components/PlaceFeatures';
 import BookingCalender from '../components/BookingCalender';
 import PlaceGallery from '../components/PlaceGallery';
+import ReviewSection from '../components/ReviewSection';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { useParams } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 
@@ -89,13 +92,12 @@ export default function PlaceDetail() {
 
   return (
     <>
-    {place?.pictures ? place.pictures.map((pic) => {
-      console.log(pic)
-      return (<img width={200} src={pic} alt="Gallery Picture" />)
-    }) : 'loading :)'}
+    <Header />
+    <PlaceGallery place={place} />
     <PlaceFeatures place={place} />
     <BookingCalender />
-    <PlaceGallery />
+    <ReviewSection place={place} />
+    <Footer />
     </>
   )
 }
