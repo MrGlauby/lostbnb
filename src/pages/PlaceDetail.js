@@ -1,12 +1,14 @@
 import React, { useCallback } from 'react'
 import PlaceFeatures from '../components/PlaceFeatures';
 import BookingCalender from '../components/BookingCalender';
+import PlaceGallery from '../components/PlaceGallery';
 import { useParams } from 'react-router-dom';
 import {useEffect, useState} from 'react';
 
 import '../styles/BookingCalender.css'
 import '../styles/PlaceFeatures.css'
 import { fetchEntry, fetchAsset } from '../utils/contentfulApi';
+
 
 export default function PlaceDetail() {
   const {placeID} = useParams();
@@ -93,6 +95,7 @@ export default function PlaceDetail() {
     }) : 'loading :)'}
     <PlaceFeatures place={place} />
     <BookingCalender />
+    <PlaceGallery />
     </>
   )
 }

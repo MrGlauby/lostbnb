@@ -1,0 +1,149 @@
+
+/* alles */
+.warpGallery{
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+h2{
+    padding: 10px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+/* nav */
+
+.sternchen {
+    width: 15px;
+    height: 15px;
+}
+
+.arrow{
+    width: 13px;
+    height: 13px;
+    margin-bottom: -10px;
+}
+
+.heart{
+    width: 13px;
+    height: 13px;
+    margin-top: 13px;
+    margin-left: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 1rem;    
+}
+
+a:hover{
+    color: #E61C5D;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+}
+
+.leftNav{
+    display: flex;
+	align-items:center;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+
+.rightNav{
+    display: flex;
+    padding: 5px;  
+}
+
+.interLeft{
+    padding:5px;
+}
+
+.interRight {
+    padding:10px;   
+}
+
+/* nav ende */
+
+
+/* gallery */
+.gallery{
+    display: flex;
+    padding: 30px;
+    }
+    
+
+.mainPic{
+    padding: 3px;
+
+    min-height: 250px;
+    min-width: 250px;
+    
+    max-width: 50%;
+    max-height: 50%;
+    transition:0.4s; 
+}
+
+.mainPic:hover{
+    transform:scale(.94);
+    box-shadow: 0 0 5px black;
+
+}
+
+/* div 4 pics */
+.smallPics img{
+
+
+    min-height: 150px;
+    min-width: 150px;
+    
+    max-width: 40%;
+    max-height: 40%;
+
+    padding: 3px;
+    transition:0.4s; 
+
+}
+
+.smallPics img:hover{
+transform:scale(.94);
+box-shadow: 0 0 5px black;
+}
+
+.smallPics img:hover{
+}
+
+/*  div oberen 2 */
+.sideOver{
+    display: flex;
+}
+
+/*  div unteren 2 */
+.sideUnder{
+    display: flex;
+}
+
+
+.dude{
+    border-radius: 400px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+  
