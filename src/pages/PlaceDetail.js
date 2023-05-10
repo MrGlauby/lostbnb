@@ -10,9 +10,6 @@ import './styles/PlaceFeatures.css'
 export default function PlaceDetail() {
   return (
     <>
-
-    
-
     <PlaceFeatures />
     <BookingCalender />
     <PlaceGallery />
