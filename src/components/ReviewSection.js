@@ -4,6 +4,11 @@ import OneReview from './OneReview'
 export default function ReviewSection({place}) {
   return (
     <div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h1 className= "reviewHeader">Reviews:</h1>
       <div className="reviewWrapper">
         <div className="reviews">
           {place?.reviews.map((review) => {
@@ -14,6 +19,10 @@ export default function ReviewSection({place}) {
             )
           })}
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         </div>
     </div>
   );

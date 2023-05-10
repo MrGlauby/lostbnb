@@ -6,3 +6,18 @@
 .reviewSection-container {
     background-color: azure;
 }
+
+.reviewCard {
+  display: flex;
+  margin: 10px 10%;
+}
+
+.reviewCard p {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.reviewHeader {
+  font-weight: 900;
+  font-size: 3rem;
+}

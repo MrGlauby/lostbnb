@@ -10,6 +10,7 @@ import {useEffect, useState} from 'react';
 
 import '../styles/BookingCalender.css'
 import '../styles/PlaceFeatures.css'
+import '../styles/ReviewSection.css'
 import { fetchEntry, fetchAsset } from '../utils/contentfulApi';
 
 
