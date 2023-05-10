@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
             <div className="footerColumns">
               {footerLinks.map((footerColumn) => {
-                return <FooterNavLinks className="footerColumn" footerColumn = {footerColumn} />
+                return <FooterNavLinks key={footerColumn.title} className="footerColumn" footerColumn = {footerColumn} />
               })}
             </div>
             <div className="newsletter">

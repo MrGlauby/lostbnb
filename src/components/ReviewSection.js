@@ -1,9 +1,20 @@
 import React from 'react'
+import OneReview from './OneReview'
 
-export default function ReviewSection() {
+export default function ReviewSection({place}) {
   return (
     <div>
-        <h1>Bewertungen</h1>
+      <div className="reviewWrapper">
+        <div className="reviews">
+          {place?.reviews.map((review) => {
+            return(
+              <div className="reviewCard">
+            <OneReview  review={review} />
+            </div>
+            )
+          })}
+        </div>
+        </div>
     </div>
-  )
+  );
 }

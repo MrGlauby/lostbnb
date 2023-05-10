@@ -17,7 +17,7 @@ async function fetchContentful(fetchUrl) {
     } catch(error) {
         console.error(`ERROR: ${error}`)
     }
-    console.log("response Data async log: ", responseData);
+    // console.log("response Data async log: ", responseData);
     return responseData;
 }
 

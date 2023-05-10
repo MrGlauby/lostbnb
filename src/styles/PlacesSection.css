@@ -1,0 +1,16 @@
+.placePreviews {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 80rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.placeSlider {
+    display: flex;
+    justify-content: center;
+}
+
+.singlePlace {
+    padding-right: 1rem;
+}

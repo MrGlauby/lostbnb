@@ -1,14 +1,11 @@
-import React from 'react'
+import React from 'react';
 import icon from '../img/danger.png';
 
-
-
-
-export default function PlaceFeatures() {
+export default function PlaceFeatures({ place }) {
 
   return (
     <>
-    <h1 className="placeFeatures-heading">This Lost Place offers you the following:</h1>
+    <h1 className="placeFeatures-heading">{place?.name} offers you the following:</h1>
     <br/>
     <br/>
     <br/>
