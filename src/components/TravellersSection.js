@@ -12,7 +12,10 @@ export default function TravellersSection() {
           <h2>Peter Paramount</h2>
           <img className='traveller1' src={img1} alt='customer' />
           <p>
-          "Fantastic platform! User-friendly interface, excellent search filters, and a vast selection of accommodations. Highly recommend for any travel needs."
+
+            "Great experience! The accommodation was exactly as described and 
+            the host was very responsive and helpful. Highly recommend!"
+
           </p>
         </div>
         <div className='card'>
@@ -20,14 +23,20 @@ export default function TravellersSection() {
           <img className='traveller1' src={img2} alt='customer' />
 
           <p>
-          "Excellent platform! Easy to use, great selection of accommodations, and reliable customer service. Highly recommend!"
+
+            "Amazing platform! Easy to use, great selection of accommodations, 
+            and excellent customer service. Highly recommend for all your travel needs!"
+
           </p>
         </div>
         <div className='card'>
           <h2>Jack Jackson</h2>
           <img className='traveller3' src={img3} alt='customer' />
           <p>
-          "Amazing platform! Easy to use, great selection of accommodations, and excellent customer service. Highly recommend for all your travel needs!"
+
+            "Excellent platform! User-friendly interface, extensive listings, 
+            and great customer service. Highly recommend for your next trip!"
+
           </p>
         </div>
       </div>
