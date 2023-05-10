@@ -1,9 +1,9 @@
 import React from 'react'
 import icon from '../img/apron-icon.png';
-export default function PlaceFeatures() {
+export default function PlaceFeatures({ place }) {
   return (
     <>
-    <h1 className="placeFeatures-heading">Dies bietet dir die Unterkunft:</h1>
+    <h1 className="placeFeatures-heading">Dies bietet dir die Unterkunft {place.name}:</h1>
     <br/>
     <br/>
     <br/>

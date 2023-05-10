@@ -6,7 +6,7 @@ import '../styles/PlacesSection.css'
 
 export default function PlacesSection() {
   const [fetchedPlaces, setFetchedPlaces] = useState(null);
-  const [places, setPlaces] = useState([]);
+  const [places, setPlaces] = useState(null);
   
   useEffect(() => {
     fetchContentTypeAll('places')
@@ -15,12 +15,10 @@ export default function PlacesSection() {
     })
   }, [])
   
-
 useEffect(() => {
   if(fetchedPlaces) {
-    setPlaces([]);
     // console.log("fetchedPlaces FUNCTION: ", fetchedPlaces)
-    fetchedPlaces.items.map((data) => {
+    const allPlaces = fetchedPlaces.items.map((data) => {
       const placesObject = 
         {
           id: data.sys.id,
@@ -35,17 +33,18 @@ useEffect(() => {
           // entryReviews: data.fields.reviews.sys.id
         };
         console.log("Places Object: ", placesObject);
-        setPlaces((prev) => [...prev, placesObject]);
-        // console.log("ALL PLACES: ", places)
+    
+        return placesObject
     })
+
+    setPlaces(allPlaces)
+    console.log(allPlaces)
   }
 }, [fetchedPlaces])
 
   // if(fetchedPlaces){
   //   console.log("fetchedPlaces: ", fetchedPlaces);
   //   };
-
-  // if(!places) return <div>Loading...</div>
 
   return (
     <>
@@ -60,14 +59,15 @@ useEffect(() => {
           <button className='sliderBtn nxtBtn'>&#62;</button>
         </div> */}
         <div className="placePreviews">
-
-          {places.map((place) => {
-            return( 
-            <div className="singlePlace">
-            <PlacePreview place={place}/>
-            </div>
-            )
-          })}
+          {places ?
+            places.map((place) => {
+              return( 
+              <div className="singlePlace">
+              <PlacePreview place={place}/>
+              </div>
+              )
+            }) : <div>Loading</div>
+          }
         </div>
         </div>
       </div>
