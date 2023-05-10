@@ -5,6 +5,13 @@ export default function PlaceFeatures({ place }) {
 
   return (
     <>
+    <div className="placeFeatures-heading" >
+      <h1>Description</h1>
+      <br />
+      <h2 className="placeDescription">{place?.description}</h2>
+    </div>
+    <br />
+    <br />
     <h1 className="placeFeatures-heading">{place?.name} offers you the following:</h1>
     <br/>
     <br/>

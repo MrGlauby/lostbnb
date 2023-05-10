@@ -9,6 +9,8 @@
 .placeSlider {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
+    padding-left: 15rem;
 }
 
 .singlePlace {

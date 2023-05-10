@@ -49,3 +49,7 @@
 .placeFeatures-btn:hover {
     background-color: lightgray;
 }
+
+.placeDescription {
+    width: 70%;
+}

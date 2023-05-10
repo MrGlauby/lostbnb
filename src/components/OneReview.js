@@ -6,7 +6,7 @@ export default function OneReview({review}) {
       <br />
       <br />
 
-      <h3>{review?.title}</h3>
+      <h2>{review?.title}</h2>
       <br/>
       <p>{review?.postingTime}</p>
       <p>Rating: {review?.rating} / 5</p>
